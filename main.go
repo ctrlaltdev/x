@@ -45,18 +45,26 @@ func main() {
 
 	if *revert {
 		if *binary {
+
 			fmt.Println(convertFromBin(input))
+
 		} else {
+
 			out, err := hex.DecodeString(input)
 			CheckErr(err)
-			fmt.Println(string(out))
+			fmt.Println(strings.ToUpper(string(out)))
+
 		}
 	} else {
 		if *binary {
+
 			fmt.Println(convertToBin(input))
+
 		} else {
+
 			out := hex.EncodeToString([]byte(input))
 			fmt.Println(out)
+
 		}
 	}
 }
