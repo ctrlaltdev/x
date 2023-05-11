@@ -63,7 +63,7 @@ func main() {
 		} else {
 
 			out := hex.EncodeToString([]byte(input))
-			fmt.Println(out)
+			fmt.Println(strings.ToUpper(out))
 
 		}
 	}
