@@ -52,7 +52,7 @@ func main() {
 
 			out, err := hex.DecodeString(input)
 			CheckErr(err)
-			fmt.Println(strings.ToUpper(string(out)))
+			fmt.Println(string(out))
 
 		}
 	} else {
